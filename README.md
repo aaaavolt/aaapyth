@@ -26,10 +26,7 @@ git log
 ```bash
 git remote
 ```
-## отпраквка на репозиторий
-```bash
-git push -u origin main
-```
+### обновление
 ## добавление в отслеживаеимое
 ```bash
 git add name_of_file
@@ -37,4 +34,8 @@ git add name_of_file
 ## подтверждение изменений
 ```bash
 git commit -m ""
+```
+## отпраквка на репозиторий
+```bash
+git push -u origin main
 ```
