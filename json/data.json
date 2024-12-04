@@ -1,12 +1,11 @@
 {
     "name":"PUHLI_TIRAN",
     "age":25,
-    "COUNTRY"
+    "COUNTRY":"serbia",
     "skills": ["WIN UPDATE", "escel", "online py dev","paint legend"],
     "adress": {
         "city": "msk",
         "house": "grinchstreet"
     }
 
-}
 }
