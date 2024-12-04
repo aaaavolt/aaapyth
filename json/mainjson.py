@@ -4,10 +4,15 @@ import json
 # print(data["name"]) 
 # print(data["age"]) 
  
-python_data = {
-    "name": "leha",
-    "gruz": 200,
-    "skills": []
-}
-json_string = json.dumps(python_data, indent =4)
-print (json_string)
+# python_data = {
+#     "name": "leha",
+#     "gruz": 200,
+#     "skills": []
+# }
+# json_string = json.dumps(python_data, indent =4)
+# print (json_string)
+with open("./data.json","r") as file:
+    data =  json.load(file)
+
+print(data)
+print(data["name"])    
