@@ -21,5 +21,5 @@ data = {
     "age":52,
     "hobbies":["Mass shootin","grandson of miyagi","cooki cliker", "owner  of faith"]
 }
-with open("./json/output.json","r") as  file:
+with open("./json/output.json","w") as  file:
     json.dump(data, file, indent=4)
