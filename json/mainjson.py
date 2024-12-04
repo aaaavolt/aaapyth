@@ -11,7 +11,7 @@ import json
 # }
 # json_string = json.dumps(python_data, indent =4)
 # print (json_string)
-with open("./data.json","r") as file:
+with open("./json/data.json","r") as file:
     data =  json.load(file)
 
 print(data)
