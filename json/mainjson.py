@@ -11,8 +11,15 @@ import json
 # }
 # json_string = json.dumps(python_data, indent =4)
 # print (json_string)
-with open("./json/data.json","r") as file:
-    data =  json.load(file)
+# with open("./json/data.json","r") as file:
+#     data =  json.load(file)
 
-print(data)
-print(data["name"])    
+# print(data)
+# print(data["name"])    
+data = {
+    "name": "nicola2",
+    "age":52,
+    "hobbies":["Mass shootin","grandson of miyagi","cooki cliker", "owner  of faith"]
+}
+with open("./json/output.json","r") as  file:
+    json.dump(data, file, indent=4)
