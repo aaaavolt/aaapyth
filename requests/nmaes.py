@@ -20,3 +20,4 @@ URL_GENDER = "https://api.genderize.io"
 URL_AGE = "https://api.agify.io"
 URL_NATIONALITY = "https://api.nationalize.io"
 get_all_by_name()
+# aaaa
