@@ -19,7 +19,9 @@ def extract_user_indo(data):
     user_info = [
     ]   
     for user in data['results']:
-        name = f"{user['name']['first']}{user['name']['last']}"
+        n
+        ...............................................................................................................................................................................................................................................................................................................................................................................................................................................................................ame = f"{user['name']['first']}{user['name']['last']}"
+        
         gender = f"{user['gender']}"
         email = f"{user['email']}"
         country = f"{user['location']['country']}"
@@ -28,12 +30,13 @@ def extract_user_indo(data):
     return user_info
 def get_user_info_table(user_info):
     table = PrettyTable()
-    table.field_names = ["имя","пол", "возраст", "эмаил", "страна"]
+    table.field_names = ["НАзаннние","пол", "возраст", "эмаил", "страна"]
     for info in user_info:
         table.add_row(info)
     return table
 def main():
     NUM_RESULT = int(input("!!!"))
+    QUERY = input("!!#!!")
     data = get_random_users_data(NUM_RESULT=NUM_RESULT)
     if data:
         print([NUM_RESULT])
