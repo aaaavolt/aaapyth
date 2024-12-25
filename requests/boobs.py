@@ -3,10 +3,10 @@ import requests
 import pprint
 import json
 from prettytable import PrettyTable
-def get_random_users_data(num_users=5):
+def get_random_users_data(NUM_RESULT=5, QUERY = "гарри"):
 
 
-    url = f"https://randomuser.me/api/?results={num_users}"
+    url = f"https://www.googleapis.com/books/v1/volumes?q={QUERY}&maxResults={NUM_RESULT}&langRestrict=ru"
     try:
         response = requests.get(url=url)
         response.raise_for_status()
@@ -33,15 +33,13 @@ def get_user_info_table(user_info):
         table.add_row(info)
     return table
 def main():
-    num_users = int(input("!!!"))
-    data = get_random_users_data(num_users=num_users)
+    NUM_RESULT = int(input("!!!"))
+    data = get_random_users_data(NUM_RESULT=NUM_RESULT)
     if data:
-        print([num_users])
+        print([NUM_RESULT])
         user_info  = extract_user_indo(data)
         print(get_user_info_table(user_info=user_info))
     else:
         print()
 if __name__ == "__main__":
     main()
-
-    я лох дибил какашка ахахахахаххаха ну пипец я лоооъх44
