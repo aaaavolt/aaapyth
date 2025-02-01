@@ -23,7 +23,7 @@ class Wd:
         options.add_argument("--disable-gpu")
         options.add_argument("--no-sandbox")
         options.add_argument("--disable-dev-shm-usage")
-        conf = config.myConfig()
+        conf = config.MyConfig()
         conf.read_file()
 
         options.add_argument(f"user-agent={conf.get_user_agent()}")
@@ -72,7 +72,7 @@ class Wd:
               self.write(self.get_page_source(), filename)    
 if __name__ == "__main__":
       wd = Wd(True)
-      conf = config.myConfig()
+      conf = config.MyConfig()
       conf.read_file()
     #   URL = conf.get_test_url()
       URL = "https://flowwow.com/bakery-products/tort-fistashkoviy-4336/"

@@ -1,7 +1,7 @@
 import configparser
 import os
 
-class myConfig:
+class MyConfig:
     def __init__(self, filename = "config.ini"):
         self.__filename = filename
         self.__config = configparser.ConfigParser()
@@ -29,7 +29,7 @@ class myConfig:
             print(f"{self.get_filename()} schitali")
 
 if __name__ == "__main__":
-    conf = myConfig()
+    conf = MyConfig()
     conf.read_file()
     print(conf.get_user_agent())
     print(conf.get_test_url())
